@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Omar Nasser — Developer Portfolio</title>
+<meta name="description" content="Personal developer portfolio — hand-inked, hand-coded.">
+<meta name="theme-color" content="#f3f1ea">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2C16 2 6 14 6 20a10 10 0 0020 0C26 14 16 2 16 2z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Kalam:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+<!-- shared ink filters & hatch patterns -->
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="rough" filterUnits="userSpaceOnUse" x="-300" y="-300" width="3000" height="3000">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="heavy" filterUnits="userSpaceOnUse" x="-300" y="-300" width="3000" height="3000">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="dry" filterUnits="userSpaceOnUse" x="-300" y="-300" width="3000" height="3000">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.9" numOctaves="2" seed="2" result="s"/>
+      <feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  9 0 0 0 -2.9" result="m"/>
+      <feComposite in="d" in2="m" operator="in"/>
+    </filter>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#0c0c0c" stroke-width="1.7"/>
+    </pattern>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <a class="logo" href="#home" aria-label="Home">
+    <svg viewBox="0 0 46 46" aria-hidden="true">
+      <g filter="url(#rough)"><path class="s" d="M23 4 C 35 3, 43 12, 42 24 C 41 36, 32 43, 22 42 C 10 41, 3 33, 4 22 C 5 11, 13 5, 23 4 Z" stroke-width="3.2"/></g>
+      <text class="mono" id="logoMono" x="23" y="30" text-anchor="middle">ON</text>
+    </svg>
+    <span id="logoName">Omar Nasser</span>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+    <svg class="bars" viewBox="0 0 26 20" aria-hidden="true"><path class="s" d="M2 3 C 9 1, 17 4, 24 2 M2 10 C 9 8, 17 11, 24 9 M2 17 C 9 15, 17 18, 24 16" stroke-width="2.6"/></svg>
+    <svg class="x" viewBox="0 0 26 20" aria-hidden="true"><path class="s" d="M4 2 L 22 18 M22 2 L 4 18" stroke-width="2.6"/></svg>
+  </button>
+  <nav class="nav" id="nav" aria-label="Primary">
+    <ul>
+      <li><a href="#about"><span>About</span><svg viewBox="0 0 100 10" aria-hidden="true"><path class="s scr" d="M2 6 C 20 1, 38 9, 58 4 S 88 7, 98 3" stroke-width="3"/></svg></a></li>
+      <li><a href="#skills"><span>Skills</span><svg viewBox="0 0 100 10" aria-hidden="true"><path class="s scr" d="M2 6 C 20 1, 38 9, 58 4 S 88 7, 98 3" stroke-width="3"/></svg></a></li>
+      <li><a href="#projects"><span>Projects</span><svg viewBox="0 0 100 10" aria-hidden="true"><path class="s scr" d="M2 6 C 20 1, 38 9, 58 4 S 88 7, 98 3" stroke-width="3"/></svg></a></li>
+      <li><a href="#contact"><span>Contact</span><svg viewBox="0 0 100 10" aria-hidden="true"><path class="s scr" d="M2 6 C 20 1, 38 9, 58 4 S 88 7, 98 3" stroke-width="3"/></svg></a></li>
+    </ul>
+  </nav>
+  <svg class="header-line" viewBox="0 0 1200 12" preserveAspectRatio="none" aria-hidden="true"><path class="s" d="M0 6 C 150 2, 260 10, 420 5 S 700 9, 860 4 S 1100 8, 1200 5" stroke-width="3"/></svg>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home" aria-labelledby="heroTitle">
+  <div class="hero-streaks" aria-hidden="true">
+    <svg viewBox="0 0 800 700" preserveAspectRatio="xMaxYMid slice">
+      <g filter="url(#dry)">
+        <path class="s draw" d="M290 70 L 760 40" stroke-width="46"/>
+        <path class="s draw" d="M330 150 L 780 130" stroke-width="22"/>
+        <path class="s draw" d="M270 215 L 700 200" stroke-width="62"/>
+        <path class="s draw" d="M360 300 L 800 282" stroke-width="30"/>
+        <path class="s draw" d="M300 385 L 640 372" stroke-width="48"/>
+        <path class="s draw" d="M400 475 L 800 452" stroke-width="38"/>
+        <path class="s draw" d="M320 565 L 720 548" stroke-width="26"/>
+        <path class="s draw" d="M350 645 L 700 628" stroke-width="52"/>
+      </g>
+      <g filter="url(#rough)">
+        <path class="s draw" d="M300 110 L 560 365" stroke-width="2"/>
+        <path class="s draw" d="M330 20 L 600 330" stroke-width="1.6"/>
+        <path class="s draw" d="M420 20 L 580 130" stroke-width="2"/>
+        <path class="s draw" d="M400 440 L 640 690" stroke-width="1.6"/>
+        <path class="s draw" d="M520 340 L 800 520" stroke-width="2"/>
+        <path class="s draw" d="M380 540 L 560 640" stroke-width="1.6"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker"><i></i><span>Developer Portfolio · <span id="year">2026</span></span></p>
+      <h1 class="display hero-title" id="heroTitle"><span id="firstName">Omar</span><span id="lastName">Nasser</span></h1>
+      <div class="under-wrap reveal" style="margin-top:.6rem">
+        <svg class="under" viewBox="0 0 400 24" aria-hidden="true"><g filter="url(#heavy)"><path class="s draw" d="M6 14 C 80 6, 140 20, 210 11 S 340 14, 394 8" stroke-width="10"/></g></svg>
+      </div>
+      <p class="role" id="role">Full-stack developer</p>
+      <p class="lede" id="tagline"></p>
+      <div class="cta">
+        <a class="btn solid" href="#projects"><span>See my work</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path class="s" stroke="currentColor" d="M3 12 C 8 11, 14 13, 20 12 M14 6 L 20 12 L 14 18" stroke-width="2.4"/></svg></a>
+        <a class="btn" href="#contact"><span>Say hello</span></a>
+      </div>
+    </div>
+
+    <figure class="hero-art">
+      <svg viewBox="0 0 540 520" role="img" aria-label="Ink sketch of a laptop showing code brackets, next to a steaming coffee mug">
+        <g filter="url(#heavy)" class="splashes">
+          <circle class="k pop splash" cx="40" cy="62" r="15"/>
+          <circle class="k pop splash" cx="22" cy="94" r="6"/>
+          <circle class="k pop splash" cx="64" cy="38" r="5"/>
+          <circle class="k pop splash" cx="474" cy="58" r="19"/>
+          <circle class="k pop splash" cx="506" cy="92" r="7"/>
+          <circle class="k pop splash" cx="446" cy="32" r="5"/>
+          <circle class="k pop splash" cx="26" cy="300" r="11"/>
+          <circle class="k pop splash" cx="12" cy="332" r="4"/>
+          <path class="s draw" d="M474 76 C 472 120, 478 150, 474 196" stroke-width="5"/>
+          <circle class="k pop" cx="474" cy="200" r="6"/>
+          <path class="s draw" d="M40 78 C 42 110, 38 140, 41 168" stroke-width="4"/>
+          <circle class="k pop" cx="41" cy="172" r="5"/>
+        </g>
+        <path class="s draw" d="M0 440 C 120 430, 360 446, 540 432" stroke-width="16" filter="url(#dry)"/>
+        <g filter="url(#rough)">
+          <!-- lid thickness (hatched) -->
+          <path class="s hat draw" d="M428 100 L 474 126 L 472 330 L 428 352 Z" stroke-width="3.5"/>
+          <!-- lid -->
+          <path class="s paper draw" d="M92 96 C 180 90, 340 92, 428 98 C 432 180, 431 270, 426 352 C 330 358, 190 357, 94 350 C 89 270, 91 180, 92 96 Z" stroke-width="7"/>
+          <path class="s paper draw" d="M118 120 C 200 117, 320 118, 402 122 C 404 190, 402 260, 400 326 C 320 329, 200 328, 120 325 C 117 260, 119 190, 118 120 Z" stroke-width="3.5"/>
+          <!-- lid ink shading -->
+          <path class="s draw" d="M411 112 L 413 340" stroke-width="6"/>
+          <path class="s draw" d="M419 120 L 420 332" stroke-width="3.5"/>
+          <path class="s draw" d="M104 126 L 105 332" stroke-width="3"/>
+          <!-- screen -->
+          <text class="pop" x="260" y="240" text-anchor="middle" font-size="86" style="font-family:var(--marker)">&lt;/&gt;</text>
+          <path class="s draw" d="M140 150 L 204 151" stroke-width="7"/>
+          <path class="s draw" d="M140 170 L 252 169" stroke-width="7"/>
+          <path class="s draw" d="M158 190 L 222 190" stroke-width="7"/>
+          <path class="s draw" d="M140 296 L 232 297" stroke-width="7"/>
+          <path class="s draw" d="M252 296 L 302 295" stroke-width="7"/>
+          <rect class="k blink" x="314" y="285" width="11" height="22"/>
+          <!-- base -->
+          <path class="s paper draw" d="M44 352 C 200 358, 330 358, 478 352 C 490 372, 500 388, 506 404 C 340 414, 180 414, 14 404 C 22 388, 34 372, 44 352 Z" stroke-width="7"/>
+          <path class="s draw" d="M222 362 C 250 370, 280 370, 308 362" stroke-width="4"/>
+          <!-- shadow hatching -->
+          <path class="hatf pop" d="M30 416 L 500 416 L 470 452 L 60 452 Z"/>
+          <!-- mug -->
+          <path class="s paper draw" d="M404 318 C 402 350, 406 384, 414 408 C 438 414, 462 414, 486 408 C 494 384, 498 350, 496 318 Z" stroke-width="6"/>
+          <path class="s draw" d="M404 318 C 410 304, 490 304, 496 318" stroke-width="5"/>
+          <path class="k pop" d="M410 316 C 420 308, 482 308, 490 316 C 480 324, 420 324, 410 316 Z"/>
+          <path class="s draw" d="M496 334 C 526 330, 530 372, 492 382" stroke-width="6"/>
+          <path class="s draw" d="M420 336 L 423 396" stroke-width="7"/>
+          <path class="s draw" d="M441 340 L 442 400" stroke-width="5"/>
+          <path class="s draw" d="M470 336 L 471 396" stroke-width="8"/>
+          <g class="steam">
+            <path class="s draw" d="M432 296 C 420 276, 446 264, 432 244 C 424 232, 438 222, 434 210" stroke-width="4"/>
+            <path class="s draw" d="M462 292 C 450 274, 474 262, 462 242" stroke-width="4"/>
+          </g>
+          <!-- sparkles -->
+          <path class="s draw" d="M64 160 L 64 184 M52 172 L 76 172" stroke-width="3.5"/>
+          <path class="s draw" d="M500 230 L 500 248 M491 239 L 509 239" stroke-width="3"/>
+        </g>
+      </svg>
+      <figcaption class="note">
+        <svg viewBox="0 0 44 36" aria-hidden="true"><path class="s" d="M40 30 C 24 32, 10 24, 6 8 M2 16 L 6 6 L 14 12" stroke-width="2.6"/></svg>
+        <span>desk, 2&nbsp;a.m. — ink &amp; code</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+    <svg viewBox="0 0 26 40" aria-hidden="true"><path class="s" d="M13 3 C 11 14, 15 24, 13 35 M5 27 L 13 36 L 21 27" stroke-width="3"/></svg>
+    <span>scroll</span>
+  </a>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" aria-labelledby="aboutTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num" aria-hidden="true">1</span>
+      <div>
+        <h2 class="display" id="aboutTitle">About</h2>
+        <svg class="under" viewBox="0 0 400 24" aria-hidden="true"><g filter="url(#heavy)"><path class="s draw" d="M6 14 C 80 6, 140 20, 210 11 S 340 14, 394 8" stroke-width="9"/></g></svg>
+      </div>
+    </div>
+    <div class="about-grid">
+      <figure class="portrait reveal">
+        <span class="tape" aria-hidden="true"></span>
+        <svg viewBox="0 0 360 440" role="img" aria-label="Ink sketch of a vintage camera">
+          <path class="s draw" d="M20 120 L 340 100" stroke-width="40" filter="url(#dry)"/>
+          <path class="s draw" d="M312 40 L 334 400" stroke-width="14" filter="url(#dry)"/>
+          <g filter="url(#rough)">
+            <path class="s draw" d="M10 12 C 120 8, 240 14, 350 10 C 354 140, 352 300, 348 430 C 230 434, 120 428, 12 432 C 8 300, 10 150, 10 12 Z" stroke-width="4"/>
+            <!-- strap -->
+            <path class="s draw" d="M50 190 C 24 200, 16 250, 24 330" stroke-width="7"/>
+            <path class="s draw" d="M310 190 C 336 200, 344 250, 336 330" stroke-width="7"/>
+            <!-- viewfinder hump + shutter -->
+            <path class="s paper draw" d="M120 172 C 126 140, 148 130, 170 130 L 200 130 C 222 130, 240 140, 246 172 Z" stroke-width="6"/>
+            <path class="s paper draw" d="M262 168 L 262 144 L 298 144 L 298 168" stroke-width="5"/>
+            <!-- body -->
+            <path class="s paper draw" d="M44 170 C 100 164, 260 164, 316 170 C 322 220, 322 300, 316 340 C 260 346, 100 346, 44 340 C 38 300, 38 220, 44 170 Z" stroke-width="7"/>
+            <path class="k pop" d="M52 316 C 120 322, 240 322, 308 316 L 310 336 C 240 342, 120 342, 50 336 Z"/>
+            <!-- flash, window -->
+            <path class="s paper draw" d="M62 190 C 80 188, 96 190, 110 190 C 111 200, 111 208, 110 216 C 94 218, 78 216, 62 216 C 61 206, 61 198, 62 190 Z" stroke-width="4"/>
+            <path class="s paper draw" d="M246 194 C 262 192, 278 194, 294 194 C 295 204, 295 212, 294 222 C 278 224, 262 222, 246 222 C 245 212, 245 204, 246 194 Z" stroke-width="4"/>
+            <path class="s draw" d="M70 168 L 62 150 M88 164 L 88 144 M106 168 L 114 150" stroke-width="4"/>
+            <!-- lens -->
+            <circle class="s paper draw" cx="180" cy="252" r="80" stroke-width="8"/>
+            <circle class="hatf pop" cx="180" cy="252" r="72"/>
+            <circle class="s paper draw" cx="180" cy="252" r="56" stroke-width="5"/>
+            <circle class="k pop" cx="180" cy="252" r="34"/>
+            <path class="s draw" d="M158 236 C 164 226, 174 222, 184 222" stroke-width="5" style="stroke:var(--paper)"/>
+            <circle class="s paper pop" cx="166" cy="244" r="6" style="fill:var(--paper);stroke:none"/>
+            <!-- grips -->
+            <path class="s draw" d="M58 236 L 60 306" stroke-width="8"/>
+            <path class="s draw" d="M302 236 L 303 306" stroke-width="8"/>
+            <path class="hatf pop" d="M64 352 L 296 352 L 276 384 L 84 384 Z"/>
+          </g>
+        </svg>
+        <figcaption>capturing details, one frame at a time</figcaption>
+      </figure>
+
+      <div class="reveal">
+        <p class="quote" id="aboutQuote"></p>
+        <div class="about-text" id="aboutText"></div>
+        <div class="facts">
+          <h3 class="sub">
+            <svg viewBox="0 0 34 34" aria-hidden="true"><g filter="url(#rough)"><path class="s" d="M17 3 C 9 3, 5 9, 6 15 C 7 20, 11 22, 12 26 L 22 26 C 23 22, 27 20, 28 15 C 29 9, 25 3, 17 3 Z M12 30 L 22 30 M14 33 L 20 33" stroke-width="2.4"/></g></svg>
+            Quick facts
+          </h3>
+          <ul id="facts"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" aria-labelledby="skillsTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num" aria-hidden="true">2</span>
+      <div>
+        <h2 class="display" id="skillsTitle">Skills</h2>
+        <svg class="under" viewBox="0 0 400 24" aria-hidden="true"><g filter="url(#heavy)"><path class="s draw" d="M6 14 C 80 6, 140 20, 210 11 S 340 14, 394 8" stroke-width="9"/></g></svg>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div>
+        <h3 class="sub">Brushes &amp; lines</h3>
+        <div id="skillList"></div>
+      </div>
+      <div class="reveal">
+        <h3 class="sub">Tools I use</h3>
+        <ul id="toolList"></ul>
+        <div class="principles">
+          <h3 class="sub">
+            <svg viewBox="0 0 34 34" aria-hidden="true"><g filter="url(#rough)"><path class="s" d="M17 3 C 9 3, 5 9, 6 15 C 7 20, 11 22, 12 26 L 22 26 C 23 22, 27 20, 28 15 C 29 9, 25 3, 17 3 Z M12 30 L 22 30 M14 33 L 20 33" stroke-width="2.4"/></g></svg>
+            Quick tips
+          </h3>
+          <ul id="principles"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" aria-labelledby="projectsTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num" aria-hidden="true">3</span>
+      <div>
+        <h2 class="display" id="projectsTitle">Projects</h2>
+        <svg class="under" viewBox="0 0 400 24" aria-hidden="true"><g filter="url(#heavy)"><path class="s draw" d="M6 14 C 80 6, 140 20, 210 11 S 340 14, 394 8" stroke-width="9"/></g></svg>
+      </div>
+    </div>
+    <div id="projectList"></div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" aria-labelledby="contactTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num" aria-hidden="true">4</span>
+      <div>
+        <h2 class="display" id="contactTitle">Contact</h2>
+        <svg class="under" viewBox="0 0 400 24" aria-hidden="true"><g filter="url(#heavy)"><path class="s draw" d="M6 14 C 80 6, 140 20, 210 11 S 340 14, 394 8" stroke-width="9"/></g></svg>
+      </div>
+    </div>
+    <p class="display mega reveal">Let’s make something <em>inky<svg viewBox="0 0 300 20" aria-hidden="true"><g filter="url(#heavy)"><path class="s draw" d="M4 12 C 60 4, 120 16, 180 8 S 270 12, 296 6" stroke-width="9"/></g></svg></em>.</p>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p id="availability" style="font:italic 1.15rem var(--hand);margin-bottom:.6rem"></p>
+        <a class="email" id="emailLink" href="#"><span id="emailText"></span>
+          <svg viewBox="0 0 300 12" aria-hidden="true"><path class="s scr" d="M2 7 C 50 2, 100 10, 150 5 S 250 8, 298 4" stroke-width="4"/></svg></a>
+        <div class="email-row">
+          <button class="btn" type="button" id="copyBtn"><span>Copy email</span></button>
+        </div>
+        <p class="status" id="copyStatus" role="status" aria-live="polite"></p>
+        <svg class="arrow-hint" viewBox="0 0 120 90" aria-hidden="true"><g filter="url(#rough)"><path class="s draw" d="M10 8 C 20 50, 60 70, 104 66 M86 50 L 106 66 L 84 80" stroke-width="4"/></g></svg>
+        <div class="socials" id="socials"></div>
+      </div>
+      <form class="frame reveal" id="contactForm" novalidate>
+        <div class="field"><label for="fName">Your name</label><input id="fName" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="fEmail">Your email</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="fMsg">Message</label><textarea id="fMsg" name="message" required></textarea></div>
+        <button class="btn solid" type="submit"><span>Send message</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path class="s" stroke="currentColor" d="M3 12 C 8 11, 14 13, 20 12 M14 6 L 20 12 L 14 18" stroke-width="2.4"/></svg></button>
+        <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="sep" aria-hidden="true"></div>
+<footer>
+  <div class="foot">
+    <p>© <span id="footYear">2026</span> <span id="footName">Omar Nasser</span> — drawn with ink &amp; code.</p>
+    <a class="top" href="#home"><svg viewBox="0 0 24 30" aria-hidden="true"><path class="s" d="M12 28 C 11 20, 13 12, 12 4 M4 12 L 12 3 L 20 12" stroke-width="2.8"/></svg>Back to top</a>
+  </div>
+</footer>
+
+<noscript><p style="padding:2rem;font-family:serif">This portfolio uses JavaScript to render its content. Please enable it to view the page.</p></noscript>
+
+<!-- All personal info and project details live at the top of js/all.js — edit the DATA section. -->
+<script src="js/all.js"></script>
+</body>
+</html>

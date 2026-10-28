@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f3f1ea">
+<title>404 — Page not found</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2C16 2 6 14 6 20a10 10 0 0020 0C26 14 16 2 16 2z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Kalam:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/all.css">
+</head>
+<body class="page-404">
+
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="rough" filterUnits="userSpaceOnUse" x="-300" y="-300" width="3000" height="3000">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="heavy" filterUnits="userSpaceOnUse" x="-300" y="-300" width="3000" height="3000">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="dry" filterUnits="userSpaceOnUse" x="-300" y="-300" width="3000" height="3000">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.9" numOctaves="2" seed="2" result="s"/>
+      <feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  9 0 0 0 -2.9" result="m"/>
+      <feComposite in="d" in2="m" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+
+<header>
+  <a class="logo" id="homeLogo" href="/" aria-label="Back to home">
+    <svg viewBox="0 0 46 46" aria-hidden="true">
+      <g filter="url(#rough)"><path class="s" d="M23 4 C 35 3, 43 12, 42 24 C 41 36, 32 43, 22 42 C 10 41, 3 33, 4 22 C 5 11, 13 5, 23 4 Z" stroke-width="3.2"/></g>
+      <text class="mono" id="mono" x="23" y="30" text-anchor="middle">ON</text>
+    </svg>
+    <span id="siteName">Omar Nasser</span>
+  </a>
+  <svg class="line" viewBox="0 0 1200 12" preserveAspectRatio="none" aria-hidden="true"><path class="s" d="M0 6 C 150 2, 260 10, 420 5 S 700 9, 860 4 S 1100 8, 1200 5" stroke-width="3"/></svg>
+</header>
+
+<main id="main">
+  <svg class="streaks top" viewBox="0 0 1200 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g filter="url(#dry)">
+      <path class="s draw" d="M-40 30 L 1240 18" stroke-width="40"/>
+      <path class="s draw" d="M180 72 L 1050 66" stroke-width="14"/>
+    </g>
+  </svg>
+  <svg class="streaks bottom" viewBox="0 0 1200 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g filter="url(#dry)">
+      <path class="s draw" d="M-40 56 L 1240 44" stroke-width="44"/>
+      <path class="s draw" d="M120 14 L 900 10" stroke-width="16"/>
+    </g>
+  </svg>
+
+  <div class="card" id="card">
+    <p class="kicker rise"><i></i><span>Error · page not found</span><i></i></p>
+    <h1 class="code" aria-label="Error 404">
+      <span aria-hidden="true" class="rise">4</span>
+      <svg class="zero" viewBox="0 0 160 250" aria-hidden="true">
+        <g filter="url(#heavy)">
+          <path class="s draw" d="M80 18 C 130 14, 150 62, 148 106 C 146 154, 120 186, 78 186 C 34 186, 14 148, 16 102 C 18 56, 42 20, 80 18 Z" stroke-width="22"/>
+          <path class="s draw" d="M80 190 C 82 212, 78 226, 80 238" stroke-width="8"/>
+          <circle class="k pop" cx="80" cy="243" r="7"/>
+        </g>
+        <g filter="url(#rough)">
+          <path class="s draw" d="M60 92 C 58 66, 102 64, 102 92 C 102 110, 80 112, 80 134" stroke-width="8"/>
+          <circle class="k pop" cx="80" cy="154" r="6"/>
+        </g>
+        <g filter="url(#heavy)">
+          <circle class="k pop" cx="150" cy="30" r="7"/><circle class="k pop" cx="6" cy="40" r="5"/><circle class="k pop" cx="156" cy="150" r="4"/>
+        </g>
+      </svg>
+      <span aria-hidden="true" class="rise">4</span>
+    </h1>
+    <svg class="under" viewBox="0 0 400 24" aria-hidden="true"><g filter="url(#heavy)"><path class="s draw" d="M6 14 C 80 6, 140 20, 210 11 S 340 14, 394 8" stroke-width="9"/></g></svg>
+    <h2 class="rise">This page wandered off the paper.</h2>
+    <p class="lead rise">The link you followed is broken, or the page has moved. Let’s get you back to something that’s actually inked in.</p>
+    <p class="tried rise" id="tried" hidden>you looked for: <span id="triedPath"></span></p>
+    <div class="cta rise">
+      <a class="btn solid" id="homeBtn" href="/"><span>Back home</span></a>
+      <a class="btn" id="workBtn" href="/#projects"><span>See my work</span></a>
+      <a class="btn" id="helloBtn" href="/#contact"><span>Say hello</span></a>
+    </div>
+  </div>
+</main>
+
+<footer>© <span id="year">2026</span> <span id="footName">Omar Nasser</span> — drawn with ink &amp; code.</footer>
+
+<script src="js/all.js"></script>
+</body>
+</html>
