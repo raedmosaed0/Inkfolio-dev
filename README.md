@@ -2,8 +2,6 @@
 
 # Inkfolio — Hand-Drawn Developer Portfolio
 
-<p>A hand-drawn portfolio built with HTML, CSS, and JavaScript.</p>
-
 </div>
 
 <p align="center">
@@ -51,6 +49,7 @@ The entire experience is built with vanilla HTML, CSS, and JavaScript, without r
 ```text
 Inkfolio/
 ├── index.html
+├── 404.html
 ├── README.md
 └── Preview.png
 ```
@@ -88,28 +87,19 @@ Update the relevant fields to personalize the portfolio:
 
 The page automatically renders these details throughout the portfolio.
 
-## Customization
+---
 
-The design uses CSS custom properties to keep its visual style consistent.
+## Website Preview
 
-```css
-:root {
-  --ink: #0c0c0c;
-  --paper: #f3f1ea;
-}
-```
+<p align="left">
+  <img src="Preview.png" alt="Inkfolio Website Preview" width="100%">
+</p>
 
-Adjust these variables to experiment with different ink and paper colors.
+---
 
-The typography combines EB Garamond, Kalam, and Permanent Marker to create a mix of editorial typography and handwritten accents.
+## 🚀 Live Demo
 
-## Important Notes
-
-- Replace all placeholder personal information before publishing.
-- Replace example project URLs and social links with real destinations.
-- The contact form uses `mailto:` and does not send messages through a backend server.
-- The portfolio references Google Fonts, so the intended typography requires an internet connection.
-- For reliable GitHub Pages deployment, verify that all asset paths and links work correctly.
+<a href="YOUR_LIVE_DEMO_URL"><img src="https://img.shields.io/badge/LIVE_DEMO-VISIT_WEBSITE-000000?style=for-the-badge&labelColor=000000&color=F5F0E8" alt="Live Demo — Visit Website"></a>
 
 ## </> Developer
 
