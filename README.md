@@ -20,19 +20,19 @@ The entire experience is built with vanilla HTML, CSS, and JavaScript, without r
 
 ## ⬨ Features
 
-- **Hand-Drawn Visual Identity** — Sketch-inspired illustrations, ink textures, irregular borders, and a paper-like background.
-- **Animated SVG Artwork** — Draw-on effects, animated details, and illustrations that reveal themselves as you scroll.
-- **Responsive Layout** — Adaptive sections and navigation for desktop, tablet, and mobile screens.
-- **Dynamic Portfolio Content** — Personal information, skills, projects, and social links.
-- **About Section** — Developer introduction, personal statement, and quick facts.
-- **Skills Showcase** — Technical skills presented with custom brush-stroke illustrations.
-- **Project Gallery** — Project previews, technology tags, descriptions, and external links.
-- **Contact Form** — Validates contact details and prepares a message in the visitor's default email application.
-- **Email Copy Button** — Copies the configured email address to the clipboard.
-- **Interactive Navigation** — Mobile menu, active-section indicators, smooth scrolling, and a scroll-aware header.
-- **Custom 404 Error Page** — A dedicated error page displayed when a requested page cannot be found.
-- **Accessibility Considerations** — Keyboard focus indicators, descriptive labels, reduced-motion support, and a skip-to-content link.
-- **Lightweight Architecture** — Built without a frontend framework or compilation tools.
+- **Hand-Drawn Design** — Sketches, ink textures, and paper backgrounds.
+- **Animated SVGs** — Hand-drawn animations and scroll effects.
+- **Responsive Design** — Supports desktop, tablet, and mobile.
+- **Portfolio Content** — Personal details, skills, and social links.
+- **About Section** — Developer bio and personal information.
+- **Skills Showcase** — Illustrated technical skills.
+- **Project Gallery** — Projects, previews, and technologies.
+- **Contact Form** — Validates details and opens the visitor's email app.
+- **Email Copy** — Copies the contact email.
+- **Interactive Navigation** — Smooth scrolling and mobile menu.
+- **404 Error Page** — Custom page for missing pages.
+- **Accessibility** — Keyboard support and reduced-motion options.
+- **Lightweight Code** — Pure HTML, CSS, and JavaScript.
 
 ## ◈ Tech Stack
 
