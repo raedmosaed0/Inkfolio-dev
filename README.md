@@ -1,4 +1,4 @@
-<div align="center">
+ <div align="center">
 
 # Inkfolio — Hand-Drawn Developer Portfolio
 
@@ -23,15 +23,15 @@ The entire experience is built with vanilla HTML, CSS, and JavaScript, without r
 - **Hand-Drawn Visual Identity** — Sketch-inspired illustrations, ink textures, irregular borders, and a paper-like background.
 - **Animated SVG Artwork** — Draw-on effects, animated details, and illustrations that reveal themselves as you scroll.
 - **Responsive Layout** — Adaptive sections and navigation for desktop, tablet, and mobile screens.
-- **Dynamic Portfolio Content** — Update personal information, skills, projects, and social links from a centralized JavaScript configuration.
-- **About Section** — Introduce the developer, share a personal statement, and display quick facts.
-- **Skills Showcase** — Present technical skills using custom brush-stroke illustrations.
-- **Project Gallery** — Display projects with hand-drawn previews, technology tags, descriptions, and external links.
-- **Contact Form** — Validate contact details and prepare a message in the visitor's default email application.
-- **Email Copy Button** — Copy the configured email address to the clipboard.
+- **Dynamic Portfolio Content** — Personal information, skills, projects, and social links.
+- **About Section** — Developer introduction, personal statement, and quick facts.
+- **Skills Showcase** — Technical skills presented with custom brush-stroke illustrations.
+- **Project Gallery** — Project previews, technology tags, descriptions, and external links.
+- **Contact Form** — Validates contact details and prepares a message in the visitor's default email application.
+- **Email Copy Button** — Copies the configured email address to the clipboard.
 - **Interactive Navigation** — Mobile menu, active-section indicators, smooth scrolling, and a scroll-aware header.
 - **Accessibility Considerations** — Keyboard focus indicators, descriptive labels, reduced-motion support, and a skip-to-content link.
-- **Lightweight Architecture** — No framework, package installation, or compilation required.
+- **Lightweight Architecture** — Built without a frontend framework or compilation tools.
 
 ## Tech Stack
 
@@ -44,49 +44,6 @@ The entire experience is built with vanilla HTML, CSS, and JavaScript, without r
 - Clipboard API
 - Responsive Web Design
 
-## Project Structure
-
-```text
-Inkfolio/
-├── index.html
-├── 404.html
-├── README.md
-└── Preview.png
-```
-
-## Getting Started
-
-No installation or build process is needed.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Inkfolio.git
-```
-
-### 2. Open the project
-
-```bash
-cd Inkfolio
-```
-
-Open `index.html` directly in your browser, or use the Live Server extension in Visual Studio Code for local development.
-
-### 3. Customize the portfolio
-
-Find the `SITE` configuration object near the end of `index.html`.
-
-Update the relevant fields to personalize the portfolio:
-
-- Name and professional title
-- Introduction and personal statement
-- Contact email and availability
-- Skills and tools
-- Projects, descriptions, and technologies
-- GitHub, LinkedIn, and other social links
-
-The page automatically renders these details throughout the portfolio.
-
 ---
 
 ## Website Preview
@@ -97,9 +54,11 @@ The page automatically renders these details throughout the portfolio.
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
-<a href="YOUR_LIVE_DEMO_URL"><img src="https://img.shields.io/badge/LIVE_DEMO-VISIT_WEBSITE-000000?style=for-the-badge&labelColor=000000&color=F5F0E8" alt="Live Demo — Visit Website"></a>
+<a href="https://inkfolio-dev.vercel.app/"><img src="https://img.shields.io/badge/LIVE_DEMO-VISIT_WEBSITE-000000?style=for-the-badge&labelColor=000000&color=F5F0E8" alt="Live Demo — Visit Website"></a>
+
+---
 
 ## </> Developer
 
@@ -107,4 +66,4 @@ The page automatically renders these details throughout the portfolio.
 
 ---
 
-© 2026 Omar Nasser — drawn with ink & code.
+© 2026 Raed Mosaed. All rights reserved.
