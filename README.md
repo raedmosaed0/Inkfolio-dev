@@ -10,7 +10,7 @@
 
 ---
 
-## Overview
+## ⬧ Overview
 
 **Inkfolio** is a single-page developer portfolio designed around the idea of turning a traditional portfolio into a digital sketchbook.
 
@@ -18,7 +18,7 @@ Instead of relying on generic layouts and conventional UI patterns, it uses an i
 
 The entire experience is built with vanilla HTML, CSS, and JavaScript, without requiring a frontend framework or build tools.
 
-## Features
+## ⬨ Features
 
 - **Hand-Drawn Visual Identity** — Sketch-inspired illustrations, ink textures, irregular borders, and a paper-like background.
 - **Animated SVG Artwork** — Draw-on effects, animated details, and illustrations that reveal themselves as you scroll.
@@ -30,10 +30,11 @@ The entire experience is built with vanilla HTML, CSS, and JavaScript, without r
 - **Contact Form** — Validates contact details and prepares a message in the visitor's default email application.
 - **Email Copy Button** — Copies the configured email address to the clipboard.
 - **Interactive Navigation** — Mobile menu, active-section indicators, smooth scrolling, and a scroll-aware header.
+- **Custom 404 Error Page** — A dedicated error page displayed when a requested page cannot be found.
 - **Accessibility Considerations** — Keyboard focus indicators, descriptive labels, reduced-motion support, and a skip-to-content link.
 - **Lightweight Architecture** — Built without a frontend framework or compilation tools.
 
-## Tech Stack
+## ◈ Tech Stack
 
 - HTML5
 - CSS3
@@ -46,7 +47,7 @@ The entire experience is built with vanilla HTML, CSS, and JavaScript, without r
 
 ---
 
-## Website Preview
+## ◉ Website Preview
 
 <p align="left">
   <img src="Preview.png" alt="Inkfolio Website Preview" width="100%">
@@ -58,7 +59,7 @@ The entire experience is built with vanilla HTML, CSS, and JavaScript, without r
 
 ---
 
-## Live Demo
+## 🡲 Live Demo
 
 <a href="https://inkfolio-dev.vercel.app/"><img src="https://img.shields.io/badge/LIVE_DEMO-VISIT_WEBSITE-000000?style=for-the-badge&labelColor=000000&color=F5F0E8" alt="Live Demo — Visit Website"></a>
 
