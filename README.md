@@ -1,4 +1,4 @@
- <div align="center">
+<div align="center">
 
 # Inkfolio — Hand-Drawn Developer Portfolio
 
@@ -50,6 +50,10 @@ The entire experience is built with vanilla HTML, CSS, and JavaScript, without r
 
 <p align="left">
   <img src="Preview.png" alt="Inkfolio Website Preview" width="100%">
+</p>
+
+<p align="left">
+  <img src="Error404.png" alt="Inkfolio Error 404 Page" width="100%">
 </p>
 
 ---
